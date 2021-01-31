@@ -1,0 +1,19 @@
+{
+  "name": "opinionated-duration-format",
+  "version": "1.0.0",
+  "description": "Convert a duration in seconds to `m:ss`, `mm:ss`, or `h:mm:ss`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/percuss-io/opinionated-duration-format.git"
+  },
+  "author": "Eric Carraway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/percuss-io/opinionated-duration-format/issues"
+  },
+  "homepage": "https://github.com/percuss-io/opinionated-duration-format#readme"
+}
