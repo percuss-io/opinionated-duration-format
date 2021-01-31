@@ -1,17 +1,31 @@
 {
-  "name": "opinionated-duration-format",
+  "name": "@percuss.io/opinionated-duration-format",
   "version": "1.0.0",
   "description": "Convert a duration in seconds to `m:ss`, `mm:ss`, or `h:mm:ss`.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/eslint/bin/eslint.js './*.js' --fix",
+    "shipit": "bash ./scripts/publish.sh",
+    "test": "mocha 'index.spec.js'"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/percuss-io/opinionated-duration-format.git"
   },
   "author": "Eric Carraway",
   "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@percuss.io/eslint-config-ericcarraway": "^1.1.4",
+    "chai": "^4.2.0",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.2.1"
+  },
   "bugs": {
     "url": "https://github.com/percuss-io/opinionated-duration-format/issues"
   },
