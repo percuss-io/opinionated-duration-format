@@ -8,6 +8,8 @@ username_actual=$(npm whoami)
 registry_expected="https://registry.npmjs.org/"
 registry_actual=$(npm config get registry)
 
+echo "publishing $package_name ..."
+
 # verify that I'm logged in to the correct account
 if [ "$username_actual" != $username_expected ]; then
   echo "publish.sh must be run as user: $username_expected"
@@ -30,6 +32,10 @@ echo "OK"
 # we need to slightly adjust
 # the `npm publish` command
 npm publish --access public
+
+# EXPECT:
+#   "This operation requires a one-time password."
+#   "Enter OTP:"
 
 echo "- - -"
 echo "https://www.npmjs.com/package/$package_name"
